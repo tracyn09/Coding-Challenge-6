@@ -31,3 +31,10 @@ const calculateSubscriptionCost= function(plan, months, discount = 0) {
 }
 let subscriptionCost = calculateSubscriptionCost("Premium", 12, 0)
 console.log(`Total Cost: $${subscriptionCost}`);
+
+//Task 5
+const convertCurrency = function(amount, exchangeRate) {
+    return amount * exchangeRate
+}
+let conversion= convertCurrency(250, 0.85)
+console.log(`Converted Amount: $${conversion}`);

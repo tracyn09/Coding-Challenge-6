@@ -58,3 +58,12 @@ const createExpenseTracker = function() {
 let expenseTracker = createExpenseTracker()
 console.log(expenseTracker(200))
 console.log(expenseTracker(150));
+
+//Task 8
+const calculateYearsToPromotion = function(employeeLevel) {
+    if (employeeLevel < 10) {
+        return (10 - employeeLevel) * 2
+    } else if (employeeLevel === 10) {
+        return 0;}
+}
+console.log(`Years to Level 10: ${calculateYearsToPromotion(7)}`);

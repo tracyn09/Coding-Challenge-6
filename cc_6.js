@@ -11,3 +11,14 @@ const calculateSalesTax= function (amount,taxRate) {
 }
 let salesTax= calculateSalesTax(500, 0.1)
 console.log(`Sales Tax: $${salesTax}`);
+
+//Task 3
+const calculateBonus = function(salary, performanceRating) { 
+    return performanceRating === "Excellent" ? salary * 0.2:
+    performanceRating === "Good" ? salary * 0.1:
+    performanceRating === "Average" ? salary * 0.05: 0;
+         
+}
+
+let bonus = calculateBonus(7000, "Good")
+console.log(`Bonus: $${bonus}`);

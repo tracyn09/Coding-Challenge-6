@@ -38,3 +38,11 @@ const convertCurrency = function(amount, exchangeRate) {
 }
 let conversion= convertCurrency(250, 0.85)
 console.log(`Converted Amount: $${conversion}`);
+
+//Task 6 
+let orders = [200,600,1200,450,800]
+const applyBulkDiscount= (orders,discountFunction) => {
+    return orders.map(discountFunction)
+}
+orders= applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount)
+console.log(orders);

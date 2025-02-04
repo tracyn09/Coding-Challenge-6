@@ -46,3 +46,15 @@ const applyBulkDiscount= (orders,discountFunction) => {
 }
 orders= applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount)
 console.log(orders);
+
+//Task 7
+const createExpenseTracker = function() {
+    let total= 0 //start count from 0
+    return function(expenses) {
+        total += expenses
+        return `Total Expenses: $${total}` // creating consistent log entity
+    }
+}
+let expenseTracker = createExpenseTracker()
+console.log(expenseTracker(200))
+console.log(expenseTracker(150));

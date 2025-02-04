@@ -22,3 +22,12 @@ const calculateBonus = function(salary, performanceRating) {
 
 let bonus = calculateBonus(7000, "Good")
 console.log(`Bonus: $${bonus}`);
+
+//Task 4
+const calculateSubscriptionCost= function(plan, months, discount = 0) {
+    return plan === "Basic" ? 10 * months:
+    plan === "Premium" ? 20 * months:
+    plan === "Enterprise" ? 50 * months: 0;
+}
+let subscriptionCost = calculateSubscriptionCost("Premium", 12, 0)
+console.log(`Total Cost: $${subscriptionCost}`);
